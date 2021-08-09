@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="/path/to/your/fonts/folder/fonts.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="heroContainer">
+      <div class="heroContainerContent">
+          <h1 class="title">SMS<br/>SPAM<br/>DETECTOR</h1>
+          <p class="tagline">Be Aware, Stay Aware</p>
+      </div>
+      <div class='heroContainerImage'>
+        <!-- <img class="titleImage" src="images/titleImage.png" alt=""> -->
+        <img class="titleImage" src="{{ url_for('static', filename='images/titleImage.png') }}" alt="person">
+      </div>
+    </div>
+    <div class='text-container'>
+      <h3 class="enterTextTitle">Enter Your SMS below</h3>
+      <form class="userInput" action="{{ url_for('predict')}}" name='inputText' method="POST">
+        <textarea id="textArea" value='' rows=7 name='text' form='inputText'></textarea>
+        <button  id="btn" type="submit" name="button" value="predict">Predict</button>
+      </form>
+    </div>
+
+
+  </main>
+</body>
+
+</html>

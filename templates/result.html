@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="stylesResult.css"> -->
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleResult.css') }}">
+  <link rel="stylesheet" type="text/css" href="/path/to/your/fonts/folder/fonts.min.css" />
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="like">
+      <!-- <img class="images" src="images/like.png" alt=""> -->
+      <img class="images" src="{{ url_for('static', filename='images/like.png') }}" alt="Thumbs Up">
+    </div>
+    <div class="result">
+      {% if prediction == 1%}
+      <h2 style="color:red;">Spam</h2>
+      {% elif prediction == 0%}
+      <h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+      {% endif %}
+
+    </div>
+    <div class="dislike">
+      <!-- <img class="images" src="images/dislike.png" alt=""> -->
+      <img class="images" src="{{ url_for('static', filename='images/dislike.png') }}" alt="Thumbs Down">
+    </div>
+  </div>
+
+</body>
+
+</html>
