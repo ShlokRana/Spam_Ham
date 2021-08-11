@@ -39,7 +39,7 @@ def predict():
     n = open("model.pkl", "rb")
     clf = pickle.load(n)
     output = clf.predict(X1)
-    return render_template('result.html',prediction = my_prediction)
+  return render_template('result.html',prediction = my_prediction)
     
 
 if __name__ == '__main__':
