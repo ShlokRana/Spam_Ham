@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../static/stylesResult.css"> -->
-  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleResult.css') }}">
+  <link rel="stylesheet" href="../static/stylesResult.css">
+  	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleResult.css') }}"> -->
   <link rel="stylesheet" type="text/css" href="/path/to/your/fonts/folder/fonts.min.css" />
   <title></title>
 </head>
@@ -13,10 +13,10 @@
 <body>
   <div class="container">
     <div class="like">
-      <!-- <img class="images" src="../static/images/like.png" alt=""> -->
-      <img class="images" src="{{ url_for('static', filename='images/like.png') }}" alt="Thumbs Up">
+      <img class="images" src="../static/images/like.png" alt="">
+      <!-- <img class="images" src="{{ url_for('static', filename='images/like.png') }}" alt="Thumbs Up"> -->
     </div>
-    <div class="result">
+    <div class="results">
       {% if prediction == 1%}
       <h2 style="color:red;">Spam</h2>
       {% elif prediction == 0%}
@@ -25,8 +25,8 @@
 
     </div>
     <div class="dislike">
-      <!-- <img class="images" src="../static/images/dislike.png" alt=""> -->
-      <img class="images" src="{{ url_for('static', filename='images/dislike.png') }}" alt="Thumbs Down">
+      <img class="images" src="../static/images/dislike.png" alt="">
+      <!-- <img class="images" src="{{ url_for('static', filename='images/dislike.png') }}" alt="Thumbs Down"> -->
     </div>
   </div>
 
