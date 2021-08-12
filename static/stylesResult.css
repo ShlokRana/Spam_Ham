@@ -13,7 +13,7 @@ body {
   font-family: 'Proxima Nova', sans-serif;
 }
 
-.result {
+.results {
   height: 45vh;
   width: 53vw;
   border: solid;
@@ -48,7 +48,7 @@ body {
     flex-direction: column;
   }
 
-  .result {
+  .results {
     border-radius: 40px;
     border-width: 3px;
   }
