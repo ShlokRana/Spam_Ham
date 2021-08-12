@@ -29,7 +29,7 @@
     <div class='text-container'>
       <h3 class="enterTextTitle">Enter Your SMS below</h3>
       <form class="userInput" action="{{ url_for('predict')}}" name='inputText' method="POST">
-        <textarea id="textArea" name="message" rows="7"></textarea>
+        <textarea id="textArea" name="message" rows="7" style="font-size: 20px; line-height: 25px; padding:30px;"></textarea>
         <button  id="btn" type="submit" name="button" value="predict">Predict</button>
       </form>
     </div>
