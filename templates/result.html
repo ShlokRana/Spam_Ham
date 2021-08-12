@@ -16,7 +16,18 @@
       <img class="images" src="../static/images/like.png" alt="">
       <!-- <img class="images" src="{{ url_for('static', filename='images/like.png') }}" alt="Thumbs Up"> -->
     </div>
-    <div class="results">
+   <div class="results" style="height: 45vh;
+  width: 53vw;
+  border: solid;
+  border-radius: 30px;
+  border-width: 5px;
+  border-color: #646161;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:30px">
       {% if prediction == 1%}
       <h2 style="color:red;">Spam</h2>
       {% elif prediction == 0%}
