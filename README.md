@@ -1,8 +1,5 @@
 # Spam Classifier
 ## Using Natural Language Processing Techniques to predict
-Deployed on heroku (check this link to access the website, website may be slow and take some time to open because of free deployment services)
-<a href="https://spamsmsdetect.herokuapp.com/" target="_blank">Spam Classifier</a>
-<br></br>
 
 This website helps us to detect spam messages
 <br></br>
